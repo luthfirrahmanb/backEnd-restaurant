@@ -1,0 +1,32 @@
+{
+  "name": "tableData",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "name": {
+      "type": "number"
+    },
+    "description": {
+      "type": "string"
+    },
+    "isBooked": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "tableBooking": {
+      "type": "hasMany",
+      "model": "tableBooking",
+      "foreignKey": "tableDataId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

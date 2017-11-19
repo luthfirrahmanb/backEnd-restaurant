@@ -1,0 +1,38 @@
+{
+  "name": "tableBooking",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "contactNumber": {
+      "type": "number"
+    },
+    "bookDate": {
+      "type": "date"
+    },
+    "numberOfPeople": {
+      "type": "number"
+    },
+    "tableDataId": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
